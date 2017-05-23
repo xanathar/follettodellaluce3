@@ -1,0 +1,14 @@
+[Unit]
+    Description=Folletto della Luce 3
+
+    [Service]
+    ExecStart=/usr/local/bin/dotnet PATH_TO_DLL
+    ReadWriteDirectories=PATH_TO_WRITABLE_DIRECTORY
+    WorkingDirectory=PATH_TO_WRITABLE_DIRECTORY
+    Restart=always
+    RestartSec=10                                          
+    SyslogIdentifier=fdl3
+    User=USER_RUNNING_THIS_SERVICE_AS
+
+    [Install]
+    WantedBy=multi-user.target
