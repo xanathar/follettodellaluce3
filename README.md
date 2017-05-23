@@ -4,9 +4,9 @@ Small BOT constantly polling a remote HTTP address, checking for a specific subs
 ## How to run
 Copy Config-template.cs to Config.cs, remove the lines starting with '#' and fill all the constants in the file with the appropriate values.
 
-Run the project - whatever way you choose, but a ``dotnet run`` should be enough on MacOS and Linux.
+Run the project - whatever way you choose, but a ``dotnet run`` should be enough any platform -- tested on Linux and macOS.
 
-## How to deploy as a system.d service on Linux
+## How to deploy as a systemd service on Linux
 
 * Use ``dotnet publish`` to create a dll file.
 * Edit ``fdl3.service`` file; pay attention to all entries in ``[Service]`` section, specially user related ones.
